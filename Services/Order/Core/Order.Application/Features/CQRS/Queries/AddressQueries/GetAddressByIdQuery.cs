@@ -5,7 +5,7 @@ namespace Order.Application.Features.CQRS.Queries.AddressQueries
     {
         public long Id { get; set; }
 
-        public GetAddressByIdQuery(int id)
+        public GetAddressByIdQuery(long id)
         {
             Id = id;
         }

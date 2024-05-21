@@ -6,7 +6,7 @@ namespace Order.Application.Features.CQRS.Commands.AddressCommands
     {
         public long Id { get; set; }
 
-        public RemoveAddressCommand(int id)
+        public RemoveAddressCommand(long id)
         {
             Id = id;
         }

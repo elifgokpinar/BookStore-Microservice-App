@@ -1,14 +1,11 @@
 ﻿
 
-namespace Order.Domain.Entities
+namespace Order.Application.Features.CQRS.Commands.OrderDetailCommands
 {
-    public class OrderDetail
+    public class CreateOrderDetailCommand
     {
-        public long Id { get; set; }
         public string BookId { get; set; }
         public string BookName { get; set; }
         public long OrderId { get; set; }
-        public OrderInfo order { get; set; }
-
     }
 }
