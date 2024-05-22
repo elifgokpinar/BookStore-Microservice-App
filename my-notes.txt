@@ -1,0 +1,29 @@
+portainer kurulumu
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+http://localhost:9000/
+password2024
+portainerýn kendisi de containerdýr.
+
+mssql
+OrderDB
+password2024
+port 1440
+
+IdentityDB
+password2024
+port 1433
+
+Identity server kurulum cmd komut:
+dotnet new -i identityserver4.templates
+klasöre gel : dotnet new is4aspid --name IdentityServer
+
+
+MongoDb
+CQRS
+Mediator
+MSSQL
+Redis
+Docker
+Portainer
+DBeaver

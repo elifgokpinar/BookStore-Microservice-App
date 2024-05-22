@@ -28,7 +28,7 @@ namespace Order.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAddressList()
         {
-            var list = _getAddressQueryHandler.Handle();
+            var list = await _getAddressQueryHandler.Handle();
             return Ok(list);
         }
 
@@ -36,7 +36,7 @@ namespace Order.WebApi.Controllers
         public async Task<IActionResult> GetAddressById(long id)
         {
             var request = new GetAddressByIdQuery(id);
-            var address = _getAddressByIdQueryHandler.Handle(request);
+            var address = await _getAddressByIdQueryHandler.Handle(request);
             return Ok(address);
         }
 

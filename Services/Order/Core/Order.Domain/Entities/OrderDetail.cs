@@ -1,5 +1,7 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Order.Domain.Entities
 {
     public class OrderDetail
@@ -8,7 +10,9 @@ namespace Order.Domain.Entities
         public string BookId { get; set; }
         public string BookName { get; set; }
         public long OrderId { get; set; }
-        public OrderInfo order { get; set; }
+
+        [ForeignKey("OrderId")]
+        public OrderInfo orderInfo { get; set; }
 
     }
 }
