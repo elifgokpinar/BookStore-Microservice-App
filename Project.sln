@@ -28,11 +28,25 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Çözüm Öğeleri", "Çözüm Öğeleri", "{7DDF8613-9D1C-47A6-99D9-FD692F7C3C6B}"
 	ProjectSection(SolutionItems) = preProject
 		my-notes.txt = my-notes.txt
+		PortNumbers.txt = PortNumbers.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{FF247B11-C0EE-4EF3-BCBE-A35225F56F22}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "IdentityServer\IdentityServer\IdentityServer.csproj", "{87C355D0-E6C1-4318-AAED-84D03C1E4E97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{426E09B3-0311-44B7-B98E-6EA6767FB528}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer-Postman", "IdentityServer-Postman", "{34184E54-156B-4A13-BF00-D8FCFF3A90B2}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\postman get token.png = ..\..\..\Desktop\postman get token.png
+		PostmanISRequests.txt = PostmanISRequests.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order-Postman", "Order-Postman", "{308EB46D-54C3-402E-9CA2-7BA2E1840D41}"
+	ProjectSection(SolutionItems) = preProject
+		PostmanOrderRequest.txt = PostmanOrderRequest.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +94,8 @@ Global
 		{11567AA8-3707-4654-97CC-DBB9166D1BA3} = {424F4A3D-BA3A-4D62-8EA4-6E4043EA3240}
 		{8DE35C94-1058-4217-BE9F-4011707DF4F4} = {D36CBF37-A36A-4E5A-AD0A-9FD547714F5A}
 		{87C355D0-E6C1-4318-AAED-84D03C1E4E97} = {FF247B11-C0EE-4EF3-BCBE-A35225F56F22}
+		{34184E54-156B-4A13-BF00-D8FCFF3A90B2} = {7DDF8613-9D1C-47A6-99D9-FD692F7C3C6B}
+		{308EB46D-54C3-402E-9CA2-7BA2E1840D41} = {7DDF8613-9D1C-47A6-99D9-FD692F7C3C6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23D24AAB-4BA7-4B2A-B392-D903F08EE7FA}

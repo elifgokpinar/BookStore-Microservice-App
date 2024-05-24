@@ -1,0 +1,10 @@
+https://localhost:5001/api/Registration
+
+{
+    "Username":"gelif",
+    "FirstName":"Elif",
+    "LastName":"Gök",
+    "Password":"Password123*",
+    "Email":"elif@gmail.com"
+}
+
