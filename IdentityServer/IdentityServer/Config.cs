@@ -15,12 +15,14 @@ namespace IdentityServer
             // key'e sahip olan Scope'taki işlemleri yapabilme yetkisi vardır.
             new ApiResource("ResourceCatalog"){ Scopes = {"CatalogFullPermission","CatalogReadPermission"}},
             new ApiResource("ResourceOrder"){ Scopes = {"OrderFullPermission"}},
+            new ApiResource("ResourceCargo"){ Scopes = {"CargoFullPermission"}},
+
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
 
         };
 
         public static IEnumerable<IdentityResource> IdentityResources => new IdentityResource[]
-        {           
+        {
             new IdentityResources.OpenId(),
             new IdentityResources.Email(),
             new IdentityResources.Profile(),
@@ -31,6 +33,8 @@ namespace IdentityServer
            new ApiScope("CatalogFullPermission","Full permission for catalog operation."),
            new ApiScope("CatalogReadPermission","Only read permission for catalog operation."),
            new ApiScope("OrderFullPermission","Only read permission for order operation."),
+           new ApiScope("CargoFullPermission","Only read permission for cargo operation."),
+
            new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
 
         };
@@ -65,7 +69,7 @@ namespace IdentityServer
                ClientName = "BookStore Adnin User",
                AllowedGrantTypes=GrantTypes.ClientCredentials,
                ClientSecrets = {new Secret("bookstoresecret".Sha256()) },
-               AllowedScopes = { "CatalogFullPermission","CatalogReadPermission", "OrderFullPermission" ,
+               AllowedScopes = { "CatalogFullPermission","CatalogReadPermission", "OrderFullPermission", "CargoFullPermission",
                IdentityServerConstants.LocalApi.ScopeName,
                IdentityServerConstants.StandardScopes.Email,
                IdentityServerConstants.StandardScopes.OpenId,
